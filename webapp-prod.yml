@@ -1,0 +1,22 @@
+server:
+  port: 8080
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+eureka:
+  client:
+    serviceUrl:
+      register-with-eureka: true
+      fetch-registry: true
+      defaultZone: http://cp5:123456@localhost:8081/eureka/
+  instance:
+    preferIpAddress: true
+
+data:
+  env: web-pro
