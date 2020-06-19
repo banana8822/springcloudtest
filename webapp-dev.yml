@@ -1,2 +1,13 @@
+server:
+  port: 8080
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 data:
   env: web-config-dev
