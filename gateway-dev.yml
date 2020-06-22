@@ -3,3 +3,5 @@ server:
   
 zuul:
   ignored-services: someapp
+  routes:
+    webapp: /zuultest/**
