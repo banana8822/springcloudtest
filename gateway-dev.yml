@@ -1,2 +1,5 @@
 server:
   port: 8083
+  
+zuul:
+  ignored-services: rest-demo
