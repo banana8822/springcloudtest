@@ -2,4 +2,4 @@ server:
   port: 8083
   
 zuul:
-  ignored-services: webapp
+  ignored-services: someapp
