@@ -11,3 +11,8 @@ management:
 
 data:
   env: web-dev
+
+spring.datasource.driverClassName = com.mysql.jdbc.Driver
+spring.datasource.url = jdbc:mysql://172.16.1.114:3310/lhjc_zsnew?characterEncoding=utf8&useSSL=true&verifyServerCertificate=false
+spring.datasource.username = lhjczsdbuser
+spring.datasource.password = LhjcZsDbUser@20181106!
