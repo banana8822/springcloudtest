@@ -12,6 +12,7 @@ management:
 data:
   env: web-dev
 
+mybatis.type-aliases-package=com.neo.entity
 spring.datasource.driverClassName = com.mysql.jdbc.Driver
 spring.datasource.url = jdbc:mysql://172.16.1.114:3310/lhjc_zsnew?characterEncoding=utf8&useSSL=true&verifyServerCertificate=false
 spring.datasource.username = lhjczsdbuser
