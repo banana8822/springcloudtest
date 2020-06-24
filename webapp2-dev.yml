@@ -6,4 +6,7 @@ feign:
     enabled: true
     
 management:
-  context-path: /
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
