@@ -6,10 +6,4 @@ feign:
     enabled: true
     
 management:
-  endpoint:
-    shutdown:
-      enabled: false
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+  context-path: /
