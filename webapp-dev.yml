@@ -8,10 +8,6 @@ management:
     web:
       exposure:
         include: "*"
-        
-feign:
-  hystrix:
-    enabled: true
 
 mybatis:
   type-aliases-package: com.neo.entity
