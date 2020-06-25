@@ -6,7 +6,7 @@ feign:
     enabled: true
 
 turbine:
-  app-config: webapp,webapp2
+  app-config: webapp2
   aggregator:
     cluster-config: default
   cluster-name-expression: new String("default")
