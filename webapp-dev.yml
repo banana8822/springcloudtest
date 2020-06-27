@@ -19,6 +19,15 @@ spring:
     url: jdbc:mysql://172.16.1.114:3310/lhjc_zsnew?characterEncoding=utf8&useSSL=true&verifyServerCertificate=false
     username: lhjczsdbuser
     password: LhjcZsDbUser@20181106!
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: 
+    password:
+  cloud:
+    bus:
+      trace:
+        enabled: true
     
 data:
   env: web-dev
