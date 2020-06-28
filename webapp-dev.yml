@@ -28,4 +28,4 @@ spring:
         enabled: true
     
 data:
-  env: web-dev2
+  env: web-dev3
