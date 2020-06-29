@@ -7,7 +7,7 @@ spring:
       discovery:
         locator:
           enabled: true
-          #不限制服务名大写
+          #服务名小写
           lowerCaseServiceId: true
       routes:
         - id: gateway-service
