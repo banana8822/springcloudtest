@@ -7,6 +7,8 @@ spring:
       discovery:
         locator:
           enabled: true
+          #不限制服务名大写
+          lowerCaseServiceId: true
       routes:
         - id: gateway-service
           uri: https://blog.csdn.net
