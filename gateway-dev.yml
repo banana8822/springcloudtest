@@ -7,7 +7,7 @@ spring:
       discovery:
         locator:
           enabled: true
-        routes:
+      routes:
         - id: gateway-service
           uri: https://blog.csdn.net
           predicates:
