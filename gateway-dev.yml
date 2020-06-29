@@ -7,11 +7,7 @@ spring:
       discovery:
         locator:
           enabled: true
-      routes:
-        - id: gateway-service
-          uri: https://blog.csdn.net
-          predicates:
-            - Path=/meteor_93
+
 
 logging:
   level:
