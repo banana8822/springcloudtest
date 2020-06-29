@@ -2,11 +2,3 @@ server:
   port: 8086
   
 
-spring:
-  cloud:
-    gateway:
-      routes:
-        - id: gateway-service
-          uri: https://blog.csdn.net
-          predicates:
-            - Path=/meteor_93
