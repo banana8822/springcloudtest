@@ -14,6 +14,17 @@ spring:
           uri: https://blog.csdn.net
           predicates:
             - Path=/meteor_93
+
+        - id: requestratelimiter_route
+          uri: http://example.org
+          filters:
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 10
+                redis-rate-limiter.burstCapacity: 20
+                key-resolver: "#{@userKeyResolver}"
+          predicates:
+            - Method=GET
   redis:
     host: 192.168.241.20
     port: 6379
