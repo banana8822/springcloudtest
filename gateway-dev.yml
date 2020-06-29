@@ -14,6 +14,9 @@ spring:
           uri: https://blog.csdn.net
           predicates:
             - Path=/meteor_93
+  redis:
+    host: 192.168.241.20
+    port: 6379
 
 
 
