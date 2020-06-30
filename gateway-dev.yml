@@ -22,7 +22,7 @@ spring:
               args:
                 redis-rate-limiter.replenishRate: 1
                 redis-rate-limiter.burstCapacity: 2
-                key-resolver: "#{@userKeyResolver}"
+                key-resolver: "#{@hostAddrKeyResolver}"
           predicates:
             - Method=GET
   redis:
