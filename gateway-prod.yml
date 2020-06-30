@@ -2,23 +2,26 @@ server:
   port: 8086
   
 spring:
+  redis:
+    host: localhost
+    password:
+    port: 6379
   cloud:
     gateway:
-      discovery:
+     discovery:
         locator:
-          enabled: true
-          #服务名小写
-          lowerCaseServiceId: true
-      routes:
-        - id: nameRoot
-          uri: lb://spring-cloud-producer
-          predicates:
-          - Path=/name/**
-          filters:
-          - StripPrefix=1
-  redis:
-    host: 192.168.241.20
-    port: 6379
+         enabled: true
+     routes:
+     - id: requestratelimiter_route
+       uri: http://example.org
+       filters:
+       - name: RequestRateLimiter
+         args:
+           redis-rate-limiter.replenishRate: 10
+           redis-rate-limiter.burstCapacity: 20
+           key-resolver: "#{@userKeyResolver}"
+       predicates:
+         - Method=GET
 
 
 
