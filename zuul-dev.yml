@@ -16,8 +16,8 @@ spring:
     bus:
       trace:
         enabled: true
-  zipkin:
-    base-url: http://192.168.241.20:9411/
-  sleuth:
-    sampler:
-      probability: 1.0
+  #zipkin:
+  #  base-url: http://192.168.241.20:9411/
+  #sleuth:
+  #  sampler:
+  #    probability: 1.0
