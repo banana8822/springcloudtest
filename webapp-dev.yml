@@ -33,4 +33,4 @@ spring:
       probability: 1.0
     
 data:
-  env: web-dev3
+  env: web-dev
