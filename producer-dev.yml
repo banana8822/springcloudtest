@@ -22,4 +22,4 @@ management:
         include: "*"
 
 mydata:
-  name: cp7
+  name: cp5
