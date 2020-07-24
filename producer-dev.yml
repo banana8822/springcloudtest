@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 192.168.241.20
+    port: 5672
+
+management:
+  security:
+    enabled: false
+  #开启bus-refresh
+  web:
+    exposure:
+      include: "*"
+
+  #开启/actuator/refresh
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+mydata:
+  name: cp7
